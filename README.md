@@ -10,7 +10,16 @@ chạy lệnh cài package
 npm install
 ```
 
-lệnh chạy
+
+copy env
+
+```bash
+cp .env.example .env
+```
+
+điền token + port proxy vào .env vừa tạo
+
+lệnh chạy tool
 
 ```bash
 npm start
