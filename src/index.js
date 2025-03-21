@@ -11,7 +11,7 @@ const CONCURRENCY = parseInt(process.env.CONCURRENCY) || 1;
 const DEFAULT_WEB_FOCUS = process.env.DEFAULT_WEB_FOCUS || 'https://www.example.com';
 const TOKEN_GOLOGIN = process.env.TOKEN_GOLOGIN;
 const PLATFORM_OS = process.platform === 'win32' ? 'win' : 'mac';
-
+const PORTPROXY = process.env.PORT_PROXY;
 const DELAYTAB = 5000
 
 function generateRandomName() {
@@ -92,7 +92,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     proxy: {
       mode: 'socks5',
       host: '127.0.0.1',
-      port: 60000
+      port: PORTPROXY
     }
   };
 
