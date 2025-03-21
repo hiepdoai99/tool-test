@@ -1,0 +1,15 @@
+{
+    "name": "gologin-tool",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "gologin": "^2.1.12",
+      "puppeteer-core": "^24.2.1"
+    }
+  }
+  
